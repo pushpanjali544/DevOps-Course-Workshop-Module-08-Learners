@@ -38,6 +38,7 @@ jobs:
 
   docker:
     name: Push to Docker
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - name: Set up QEMU
